@@ -14,7 +14,7 @@ const useFormValidation = (initialState, validate) => {
         setIsSubmitting(false);
       }
     }
-  }, [errors]);
+  }, [errors,isSubmitting]);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
